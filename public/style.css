@@ -1,0 +1,27 @@
+/* FONT */
+@font-face {
+    font-family: Roboto;
+    src: url(./font/Roboto-Light.ttf);
+}
+
+:root {
+    /* CUSTOM PROPERTIES */
+    --white: #fbfbfb;
+    --light-gray: #d2d2d2;
+    --middle-gray: #abaaac;
+    --dark-gray: #5f5f64;
+    --black: #222222;
+
+    /* Font Family */
+    --body-font: "Roboto";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: var(--body-font);
+}
