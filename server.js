@@ -27,17 +27,19 @@ server.get("/overview", function (req, res) {
   res.render("overview");
 });
 
-// Route voor de planning
-server.get("/dagplanning", function (req, res) {
-  res.render("dagplannning");
+// Route voor de dagplanning
+server.get("/day-schedule", function (req, res) {
+  res.render("day-schedule");
 });
 
-server.get("/weekplanning", function (req, res) {
-  res.render("weekplannning");
+// Route voor de weekplanning
+server.get("/week-schedule", function (req, res) {
+  res.render("week-schedule");
 });
 
-server.get("/maandplanning", function (req, res) {
-  res.render("maandplannning");
+// Route voor de maandplanning
+server.get("/month-schedule", function (req, res) {
+  res.render("month-schedule");
 });
 
 // Route voor de sign up
