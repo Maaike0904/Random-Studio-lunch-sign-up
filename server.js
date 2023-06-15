@@ -18,7 +18,7 @@ server.set("views", "./views");
 server.use(express.static("public"));
 
 // Route voor de index pagina
-server.get("/", (request, response) => {
+server.get("/index", (request, response) => {
   response.render("index");
 });
 

@@ -177,6 +177,8 @@ h1 {
 
 .tab:hover {
   background-color: #aaa;
+  border: none;
+  color: var(--black);
 }
 
 .tab-content {
@@ -274,6 +276,8 @@ h1 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+
+  /* week schedule */
 
   .day-week-month-nav > ul {
     font-size: 0.8em;
