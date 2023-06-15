@@ -1,5 +1,120 @@
 <%- include('./partials/head.ejs') %>
 
-<main></main>
+<!-- The main content -->
+<main class="container">
+    <container class="form-outer">
+        <!-- Start form -->
+        <form method="#">
+            <!-- Start log in page -->
+            <fieldset class="page">
+                <legend class="form-legend">Log in:</legend>
+
+                <div class="field">
+                    <label for="email" class="label">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input" required />
+                </div>
+
+                <div class="field">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-input" required />
+                </div>
+
+                <div class="field">
+                    <button>Next</button>
+                </div>
+            </fieldset>
+            <!-- End log in page -->
+
+            <!-- Start office page -->
+            <fieldset class="page">
+                <legend class="form-legend">Office days:</legend>
+
+                <div class="field">
+                    <label class="form-label">On which days will you be in the office?</label>
+                    <div class="options-group">
+                        <label><input type="checkbox" name="options[]" value="option1" /> Monday</label>
+                        <label><input type="checkbox" name="options[]" value="option2" /> Tuesday</label>
+                        <label><input type="checkbox" name="options[]" value="option3" /> Wednesday</label>
+                        <label><input type="checkbox" name="options[]" value="option4" /> Thursday</label>
+                        <label><input type="checkbox" name="options[]" value="option5" /> Friday</label>
+                    </div>
+                </div>
+
+                <div class="field btns">
+                    <button class="prev-1 prev">Previous</button>
+                    <button class="next-1 next">Next</button>
+                </div>
+            </fieldset>
+            <!-- End office page -->
+
+            <!-- Start allergy page -->
+            <fieldset class="page">
+                <legend class="form-legend">Allergies:</legend>
+
+                <div class="field">
+                    <label class="form-label">Do you have any allergies?</label>
+                    <div class="allergy-group">
+                        <label><input type="checkbox" name="allergy[]" value="allergy1" /> Milk</label>
+                        <label><input type="checkbox" name="allergy[]" value="allergy2" /> Eggs</label>
+                        <label><input type="checkbox" name="allergy[]" value="allergy3" /> Fish</label>
+                        <label><input type="checkbox" name="allergy[]" value="allergy4" /> Shellfish</label>
+                        <label><input type="checkbox" name="allergy[]" value="allergy5" /> Tree nuts</label>
+                        <label><input type="checkbox" name="allergy[]" value="allergy6" /> Peanuts</label>
+                        <label><input type="checkbox" name="allergy[]" value="allergy7" /> Wheat</label>
+                        <label><input type="checkbox" name="allergy[]" value="allergy8" /> Soybeans</label>
+                        <!-- Other label for when another allergy is not present -->
+                        <label><input type="checkbox" name="allergy[]" value="allergy9" /> Other</label>
+                        <input type="text" id="other-allergy" name="otherText" placeholder="Name other allergy" />
+                    </div>
+                </div>
+
+                <div class="field btns">
+                    <button class="prev-2 prev">Previous</button>
+                    <button class="next-2 next">Next</button>
+                </div>
+            </fieldset>
+            <!-- End allergy page -->
+
+            <!-- Start preference page -->
+            <fieldset class="page">
+                <legend class="form-legend">Preferences:</legend>
+
+                <div class="field">
+                    <label class="form-label">Are you vegetarian, pescatarian, flexitarian or vegan?</label>
+                    <div class="preference-group">
+                        <label><input type="radio" name="preference[]" value="preference1" /> vegetarian</label>
+                        <label><input type="radio" name="preference[]" value="preference2" /> pescatarian</label>
+                        <label><input type="radio" name="preference[]" value="preference3" /> flexitarian</label>
+                        <label><input type="radio" name="preference[]" value="preference4" /> vegan</label>
+                        <label><input type="radio" name="preference[]" value="preference5" /> None</label>
+                    </div>
+                </div>
+
+                <div class="field btns">
+                    <button class="prev-3 prev">Previous</button>
+                    <button class="next-3 next">Next</button>
+                </div>
+            </fieldset>
+            <!-- End preference page -->
+
+            <!-- Start notes page -->
+            <fieldset class="page">
+                <legend class="form-legend">Notes:</legend>
+
+                <div class="field">
+                    <label class="form-label">Do you have any notes for the chef?</label>
+                    <div class="notes-group">
+                        <textarea id="note" name="note"></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <button type="submit" class="submit">Send</button>
+                </div>
+            </fieldset>
+            <!-- End notes page -->
+        </form>
+    </container>
+</main>
 
 <%- include('./partials/foot.ejs') %>
