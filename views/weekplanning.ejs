@@ -1,0 +1,59 @@
+<%- include('./partials/head.ejs') %>
+
+<main>
+  <nav class="day-week-month-nav">
+    <ul>
+      <li>Day</li>
+      <li>Week</li>
+      <li>Month</li>
+    </ul>
+  </nav>
+
+  <ul class="tabs">
+    <li data-tab-target="#monday" class="active tab">
+      Mon <br />
+      ...
+    </li>
+    <li data-tab-target="#tuesday" class="tab">
+      Tue <br />
+      ...
+    </li>
+    <li data-tab-target="#wednesday" class="tab">
+      Wed <br />
+      ...
+    </li>
+    <li data-tab-target="#thursday" class="tab">
+      Thu <br />
+      ...
+    </li>
+    <li data-tab-target="#friday" class="tab">
+      Fri <br />
+      ...
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="monday" data-tab-content class="active">
+      <h1>Mon</h1>
+      <p>Alle data namen voor maandag</p>
+    </div>
+    <div id="tuesday" data-tab-content>
+      <h1>Tue</h1>
+      <p>Alle data namen voor dinsdag</p>
+    </div>
+    <div id="wednesday" data-tab-content>
+      <h1>Wed</h1>
+      <p>Alle data namen voor woensdag</p>
+    </div>
+    <div id="thursday" data-tab-content>
+      <h1>Thu</h1>
+      <p>Alle data namen voor donderdag</p>
+    </div>
+    <div id="friday" data-tab-content>
+      <h1>Fri</h1>
+      <p>Alle data namen voor vrijdag</p>
+    </div>
+  </div>
+</main>
+
+<%- include('./partials/foot.ejs') %>
