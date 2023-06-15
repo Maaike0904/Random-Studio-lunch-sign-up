@@ -65,6 +65,10 @@ li {
   padding-bottom: 0.5em;
 }
 
+nav > ul :hover {
+  color: var(--light-gray);
+}
+
 .day-underline {
   text-decoration: underline;
 }
@@ -108,6 +112,15 @@ h1 {
 }
 
 /* day-schedule */
+.todays-date {
+  font-style: var(--black);
+  list-style-type: none;
+  font-family: montserrat, sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 14em;
+}
+
 .day-week-month-nav {
   width: 100vw;
   font-size: 1.3em;
@@ -150,14 +163,16 @@ h1 {
   cursor: pointer;
   padding: 10px;
   text-align: center;
-  border: 2px solid black;
+  background-color: var(--black);
+  color: var(--white);
   width: 80px;
   height: 80px;
 }
 
 .tab.active {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid black;
 }
 
 .tab:hover {
@@ -218,6 +233,7 @@ h1 {
   li {
     color: var(--black);
     text-decoration: none;
+    font-size: 1.2em;
   }
 
   ul {
@@ -257,6 +273,10 @@ h1 {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+
+  .day-week-month-nav > ul {
+    font-size: 0.8em;
   }
 
   .tabs {
