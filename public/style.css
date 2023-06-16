@@ -324,11 +324,10 @@ h1 {
 }
 .month-picker {
   padding: 5px 10px;
-  border-radius: 10px;
   cursor: pointer;
 }
 .month-picker:hover {
-  background-color: var(--light-gray);
+  background-color: var(--white);
 }
 .month-picker:hover {
   color: var(--black);
