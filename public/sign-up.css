@@ -181,3 +181,10 @@ input:focus {
     width: 19em;
     resize: none;
 }
+
+/* Send button */
+.submit {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+}
