@@ -71,7 +71,7 @@ legend {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     border: none;
     font-size: 1.5em;
     margin-bottom: 1em;
@@ -113,4 +113,93 @@ input:focus {
     justify-content: center;
     align-items: center;
     gap: 1em;
+}
+
+/* Days in the week */
+.options-group label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    text-align: center;
+}
+
+.options-group input[type="checkbox"] {
+    display: none;
+}
+
+.options-group label:hover {
+    cursor: pointer;
+}
+
+.options-group label:has(input[type="checkbox"]:checked) {
+    transition: 0.2s;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.options-group label:last-of-type {
+    grid-column: span 2;
+    justify-self: center;
+}
+
+/* Allergy */
+.allergy-group label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    text-align: center;
+}
+
+.allergy-group input[type="checkbox"] {
+    display: none;
+}
+
+.allergy-group label:hover {
+    cursor: pointer;
+}
+
+.allergy-group label:has(input[type="checkbox"]:checked) {
+    transition: 0.2s;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+/* Preference */
+.preference-group label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    text-align: center;
+}
+
+.preference-group input[type="radio"] {
+    display: none;
+}
+
+.preference-group label:hover {
+    cursor: pointer;
+}
+
+.preference-group label:has(input[type="radio"]:checked) {
+    transition: 0.2s;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.preference-group label:last-of-type {
+    grid-column: span 2;
+    justify-self: center;
+}
+
+/* Notes for the chef */
+.notes-group > textarea {
+    height: 11em;
+    width: 19em;
+    resize: none;
+}
+
+textarea {
 }
