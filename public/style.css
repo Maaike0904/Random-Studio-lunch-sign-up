@@ -25,6 +25,7 @@
 body {
   font: var(--body-font);
   background-color: var(--white);
+  z-index: -1;
 }
 
 /* Navigation */
@@ -539,36 +540,6 @@ h1 {
   display: inline-block;
   vertical-align: top;
 } */
-
-span.loading {
-  padding: 2rem;
-  font-size: 0.7rem;
-  font-weight: lighter;
-}
-
-span.loading {
-  color: light-grey;
-  animation: breathe 3s ease-out infinite normal;
-}
-
-@keyframes breathe {
-  0% {
-    transform: scale(0.9);
-  }
-  25% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-
-.sub-nav-items > .desktop-terug {
-  display: none;
-}
 
 /*
   Set the color of the icon
