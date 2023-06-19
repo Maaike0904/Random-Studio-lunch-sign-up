@@ -1,7 +1,7 @@
 /* FONT */
 @font-face {
-    font-family: Roboto;
-    src: url(./Roboto-Light.ttf);
+    font-family: "Roboto-Light";
+    src: url(Roboto-Light.ttf);
 }
 
 :root {
@@ -11,36 +11,106 @@
     --middle-gray: #abaaac;
     --dark-gray: #5f5f64;
     --black: #222222;
+    --yellow: #fafaad;
 
     /* Font Family */
-    --body-font: "Roboto";
+    --body-font: "Roboto-Light";
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: var(--body-font);
 }
 
-/* LOG IN */
-
-/* OFFICE DAYS */
-
-/* ALLERGY */
-
-/* The 'other' button at the allergy section */
-#other-allergy {
-    display: none;
+body {
+    font-family: var(--body-font);
+    background-color: var(--white);
 }
 
-/* PREFERENCE */
+/* MAIN CONTENT */
+.form-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1.5em;
+}
 
-/* NOTE */
+/* HEADER */
+.hero {
+    background-color: var(--black);
+    border-bottom-left-radius: 1em;
+}
 
-/* The note textfield */
-#note {
-    width: 15em;
-    height: 5em;
-    resize: none;
+.link-arrow-back > i {
+    color: var(--white);
+    font-size: 1.5em;
+    padding: 1em 0 0.8em 1.5em;
+}
+
+.title-sign-up {
+    color: var(--white);
+    font-size: 1.8em;
+    font-weight: 100;
+    padding: 0 0 1em 1.5em;
+}
+
+/* FORM */
+/* Fieldset */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin: 0 0 1.5em 0;
+}
+
+/* Title of the fieldset */
+legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border: none;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Container around label and input field */
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Titles of the input field */
+label {
+    font-size: 1.2em;
+}
+
+/* Input field */
+input[type="text"] {
+    background-color: var(--white);
+    margin: 1em 0 1em 0;
+    width: 20em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black; /* Vervang 'black' door de gewenste kleur */
+}
+
+/* Input field focus */
+input:focus {
+    outline: none;
+}
+
+.options-group,
+.allergy-group,
+.preference-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
