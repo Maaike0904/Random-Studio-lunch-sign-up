@@ -25,6 +25,7 @@
 body {
   font: var(--body-font);
   background-color: var(--white);
+  z-index: -1;
 }
 
 /* Navigation */
@@ -526,6 +527,26 @@ h1 {
   .month-list > div {
     margin: 5px 0px;
   }
+}
+
+/* preloader */
+/* #loader {
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+} */
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect {
+  fill: var(--dark-gray);
 }
 
 /* MEDIA QUERY */
