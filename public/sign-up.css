@@ -37,25 +37,6 @@ body {
     padding: 1.5em;
 }
 
-/* HEADER */
-.hero {
-    background-color: var(--black);
-    border-bottom-left-radius: 1em;
-}
-
-.link-arrow-back > i {
-    color: var(--white);
-    font-size: 1.5em;
-    padding: 1em 0 0.8em 1.5em;
-}
-
-.title-sign-up {
-    color: var(--white);
-    font-size: 1.8em;
-    font-weight: 100;
-    padding: 0 0 1em 1.5em;
-}
-
 /* FORM */
 /* Fieldset */
 .page {
@@ -199,7 +180,4 @@ input:focus {
     height: 11em;
     width: 19em;
     resize: none;
-}
-
-textarea {
 }
