@@ -171,3 +171,12 @@ setInterval(() => {
   )}: ${`${timer.getSeconds()}`.padStart(2, "0")}`;
   todayShowTime.textContent = formateTimer;
 }, 1000);
+
+//loader
+// const loadingState = document.getElementById("loader");
+
+//loader
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
