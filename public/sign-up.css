@@ -79,7 +79,6 @@ input[type="text"] {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid black; /* Vervang 'black' door de gewenste kleur */
-  font-family: montserrat, sans-serif;
   font-style: var(--black);
   padding: 1em;
   font-size: 1, 2em;
@@ -184,7 +183,6 @@ input:focus {
   height: 11em;
   width: 19em;
   resize: none;
-  font-family: montserrat, sans-serif;
   font-style: var(--white);
   padding: 1em;
   font-size: 1em;

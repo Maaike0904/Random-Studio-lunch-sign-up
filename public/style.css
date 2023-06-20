@@ -57,7 +57,6 @@ nav > ul {
   font-style: var(--black);
   font-size: 1em;
   list-style-type: none;
-  font-family: montserrat, sans-serif;
   padding: 2em;
   position: relative;
   line-height: 30px;
@@ -89,7 +88,6 @@ nav > ul :hover {
 
 /* Homepage */
 h1 {
-  font-family: montserrat, sans-serif;
   font-style: var(--black);
   padding: 1em;
   font-size: 2.5em;
@@ -98,7 +96,6 @@ h1 {
 }
 
 .sign-up-btn {
-  font-family: montserrat, sans-serif;
   font-style: var(--black);
   padding: 1.5em;
   font-size: 1em;
@@ -121,7 +118,6 @@ h1 {
 .todays-date {
   font-style: var(--black);
   list-style-type: none;
-  font-family: montserrat, sans-serif;
   display: flex;
   justify-content: center;
   gap: 14em;
@@ -139,7 +135,6 @@ h1 {
 .day-week-month-nav > ul {
   font-style: var(--black);
   list-style-type: none;
-  font-family: montserrat, sans-serif;
   padding: 1em;
   display: flex;
   justify-content: center;
@@ -152,7 +147,6 @@ h1 {
   font-style: var(--black);
   font-size: 1em;
   list-style-type: none;
-  font-family: montserrat, sans-serif;
   padding: 1em;
   position: relative;
   line-height: 40px;
@@ -185,7 +179,6 @@ h1 {
   width: 90cqi;
   font-style: var(--black);
   list-style-type: none;
-  font-family: montserrat, sans-serif;
   padding: 1em;
   margin-bottom: 5px;
 
@@ -250,12 +243,10 @@ h1 {
 [week-section] {
   display: flex;
   justify-content: center;
-  font-family: montserrat, sans-serif;
 
   font-style: var(--black);
   font-size: 1em;
   list-style-type: none;
-  font-family: montserrat, sans-serif;
   padding: 1em;
   position: relative;
   line-height: 27px;
@@ -269,7 +260,6 @@ h1 {
 
   font-style: var(--black);
   list-style-type: none;
-  font-family: montserrat, sans-serif;
   padding: 1em;
   justify-content: center;
   gap: 5px;
@@ -545,8 +535,6 @@ svg rect {
   fill: var(--dark-gray);
 }
 
-
-
 /* MEDIA QUERY */
 @media only screen and (min-width: 960px) {
   /* Navigation */
@@ -572,7 +560,6 @@ svg rect {
   ul {
     font-style: var(--black);
     list-style-type: none;
-    font-family: montserrat, sans-serif;
     padding: 1em;
     display: flex;
     gap: 3em;
@@ -581,7 +568,6 @@ svg rect {
 
   /* Homepage */
   h1 {
-    font-family: montserrat, sans-serif;
     font-style: var(--black);
     padding-top: 3em;
     font-size: 2.5em;
@@ -590,7 +576,6 @@ svg rect {
   }
 
   .sign-up-btn {
-    font-family: montserrat, sans-serif;
     font-style: var(--black);
     padding: 1.5em;
     font-size: 1em;
