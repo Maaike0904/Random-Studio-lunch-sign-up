@@ -279,7 +279,7 @@ h1 {
   margin-bottom: 5px;
 
   /* cqi - bron: Stephanie Eckles */
-  width: 30cqi;
+  width: 60cqi;
 
   /* Animatie scroll-driven-animation*/
   /* source: https://scroll-driven-animations.style/demos/contact-list/css/ */
@@ -620,6 +620,10 @@ svg rect {
   }
 
   /* week schedule */
+
+  [week-p] {
+    width: 30cqi;
+  }
 
   .day-week-month-nav > ul {
     font-size: 0.8em;
