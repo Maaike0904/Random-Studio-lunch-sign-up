@@ -1,190 +1,200 @@
 /* FONT */
 @font-face {
-    font-family: "Roboto-Light";
-    src: url(Roboto-Light.ttf);
+  font-family: "Roboto-Light";
+  src: url(Roboto-Light.ttf);
 }
 
 :root {
-    /* CUSTOM PROPERTIES */
-    --white: #fbfbfb;
-    --light-gray: #d2d2d2;
-    --middle-gray: #abaaac;
-    --dark-gray: #5f5f64;
-    --black: #222222;
-    --yellow: #fafaad;
+  /* CUSTOM PROPERTIES */
+  --white: #fbfbfb;
+  --light-gray: #d2d2d2;
+  --middle-gray: #abaaac;
+  --dark-gray: #5f5f64;
+  --black: #222222;
+  --yellow: #fafaad;
 
-    /* Font Family */
-    --body-font: "Roboto-Light";
+  /* Font Family */
+  --body-font: "Roboto-Light";
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--body-font);
-    background-color: var(--white);
+  font-family: var(--body-font);
+  background-color: var(--white);
 }
 
 /* MAIN CONTENT */
 .form-outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1.5em;
 }
 
 /* FORM */
 /* Fieldset */
 .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    margin: 0 0 1.5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  margin: 0 0 1.5em 0;
 }
 
 /* Title of the fieldset */
 legend {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    font-size: 1.5em;
-    margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 /* Container around label and input field */
 .field {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Titles of the input field */
 label {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /* Input field */
 input[type="text"] {
-    background-color: var(--white);
-    margin: 1em 0 1em 0;
-    width: 20em;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid black; /* Vervang 'black' door de gewenste kleur */
+  background-color: var(--white);
+  margin: 1em 0 1em 0;
+  width: 20em;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid black; /* Vervang 'black' door de gewenste kleur */
 }
 
 /* Input field focus */
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .options-group,
 .allergy-group,
 .preference-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 /* Days in the week */
 .options-group label {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid var(--black);
-    cursor: pointer;
-    text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--black);
+  cursor: pointer;
+  text-align: center;
 }
 
 .options-group input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 .options-group label:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .options-group label:has(input[type="checkbox"]:checked) {
-    transition: 0.2s;
-    color: var(--white);
-    background-color: var(--black);
+  transition: 0.2s;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .options-group label:last-of-type {
-    grid-column: span 2;
-    justify-self: center;
+  grid-column: span 2;
+  justify-self: center;
 }
 
 /* Allergy */
 .allergy-group label {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid var(--black);
-    cursor: pointer;
-    text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--black);
+  cursor: pointer;
+  text-align: center;
 }
 
 .allergy-group input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 .allergy-group label:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .allergy-group label:has(input[type="checkbox"]:checked) {
-    transition: 0.2s;
-    color: var(--white);
-    background-color: var(--black);
+  transition: 0.2s;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 /* Preference */
 .preference-group label {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid var(--black);
-    cursor: pointer;
-    text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--black);
+  cursor: pointer;
+  text-align: center;
 }
 
 .preference-group input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 .preference-group label:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .preference-group label:has(input[type="radio"]:checked) {
-    transition: 0.2s;
-    color: var(--white);
-    background-color: var(--black);
+  transition: 0.2s;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .preference-group label:last-of-type {
-    grid-column: span 2;
-    justify-self: center;
+  grid-column: span 2;
+  justify-self: center;
 }
 
 /* Notes for the chef */
 .notes-group > textarea {
-    height: 11em;
-    width: 19em;
-    resize: none;
+  height: 11em;
+  width: 19em;
+  resize: none;
 }
 
 /* Send button */
 .submit {
-    font-size: 1.5em;
-    background: none;
-    border: none;
+  font-family: montserrat, sans-serif;
+  font-style: var(--white);
+  padding: 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--black);
+  border: 1px solid black;
+  color: var(--white);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  cursor: pointer;
 }
