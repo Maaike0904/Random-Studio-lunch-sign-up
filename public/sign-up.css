@@ -74,7 +74,7 @@ label {
 input[type="text"] {
   background-color: var(--white);
   margin: 1em 0 1em 0;
-  width: 21em;
+  width: 22em;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -191,21 +191,6 @@ input:focus {
 }
 
 /* Send button */
-/* .submit {
-  font-family: montserrat, sans-serif;
-  font-style: var(--white);
-  padding: 1.5em;
-  font-size: 1em;
-  font-weight: 500;
-  background-color: var(--black);
-  border: 1px solid black;
-  color: var(--white);
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-  cursor: pointer;
-} */
 .container-form {
   width: 500px;
   margin: 0 auto;
