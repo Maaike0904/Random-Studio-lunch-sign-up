@@ -74,11 +74,15 @@ label {
 input[type="text"] {
   background-color: var(--white);
   margin: 1em 0 1em 0;
-  width: 20em;
+  width: 21em;
   border-top: none;
   border-right: none;
   border-left: none;
   border-bottom: 1px solid black; /* Vervang 'black' door de gewenste kleur */
+  font-family: montserrat, sans-serif;
+  font-style: var(--black);
+  padding: 1em;
+  font-size: 1, 2em;
 }
 
 /* Input field focus */
@@ -280,6 +284,14 @@ input:focus {
       }
     }
   }
+}
+
+input:autofill {
+  border: 2px solid var(--black);
+}
+
+input:-webkit-autofill {
+  border: 2px solid var(--black);
 }
 
 @keyframes sending {
