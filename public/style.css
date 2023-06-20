@@ -263,10 +263,8 @@ h1 {
 
 [week-p] {
   cursor: pointer;
-  padding: 10px;
   text-align: center;
   border: 2px solid black;
-  width: 250px;
   height: 80px;
 
   font-style: var(--black);
@@ -622,7 +620,7 @@ svg rect {
   /* week schedule */
 
   [week-p] {
-    width: 30cqi;
+    width: 40cqi;
   }
 
   .day-week-month-nav > ul {
