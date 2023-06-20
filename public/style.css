@@ -72,6 +72,7 @@ li {
 
 nav > ul :hover {
   color: var(--light-gray);
+  transition: all 0.2s ease-in-out;
 }
 
 .day-underline {
@@ -227,6 +228,7 @@ h1 {
   background-color: #aaa;
   border: none;
   color: var(--black);
+  transition: all 0.2s ease-in-out;
 }
 
 .tab-content {
@@ -366,9 +368,11 @@ h1 {
 }
 .month-picker:hover {
   background-color: var(--white);
+  transition: all 0.2s ease-in-out;
 }
 .month-picker:hover {
   color: var(--black);
+  transition: all 0.2s ease-in-out;
 }
 .year-picker {
   display: flex;
@@ -390,6 +394,7 @@ h1 {
 }
 .year-change:hover pre {
   color: var(--bg-body);
+  transition: all 0.2s ease-in-out;
 }
 .calendar-footer {
   padding: 10px;
@@ -582,6 +587,13 @@ svg rect {
     transform: translate(-50%, -50%);
   }
 
+  .sign-up-btn:hover {
+    background-color: var(--black);
+    border: 1px solid white;
+    color: var(--white);
+    transition: all 0.2s ease-in-out;
+  }
+
   /* day schedule */
   [day-p] {
     width: 40cqi;
@@ -591,6 +603,7 @@ svg rect {
   [week-p]:hover {
     background-color: var(--black);
     color: var(--white);
+    transition: all 0.2s ease-in-out;
   }
 
   /* week schedule */
