@@ -143,12 +143,7 @@ h1 {
 
 /* day schedule */
 [day-section] {
-  display: flex;
   justify-content: center;
-  font-family: montserrat, sans-serif;
-  flex-direction: column;
-  align-items: center;
-
   font-style: var(--black);
   font-size: 1em;
   list-style-type: none;
@@ -156,6 +151,23 @@ h1 {
   padding: 1em;
   position: relative;
   line-height: 40px;
+  text-align: center;
+}
+
+/* Container y-scroll */
+.container-days {
+  height: 500px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  counter-increment: index;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+
+  display: grid;
+
+  overflow-y: scroll;
+  padding: 20px;
 }
 
 [day-p] {
@@ -163,17 +175,38 @@ h1 {
   padding: 10px;
   text-align: center;
   border: 2px solid black;
-  width: 80%;
   height: 80px;
 
   font-style: var(--black);
   list-style-type: none;
   font-family: montserrat, sans-serif;
   padding: 1em;
-  justify-content: center;
-  gap: 5px;
-  margin-left: 5px;
   margin-bottom: 5px;
+
+  /* Animatie scroll-driven-animation*/
+  /* source: https://scroll-driven-animations.style/demos/contact-list/css/ */
+  animation: linear fade-in-on-enter--fade-out-on-exit;
+  animation-timeline: view();
+}
+
+/* Scoll animation day schedule*/
+@keyframes fade-in-on-enter--fade-out-on-exit {
+  entry 0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  entry 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  exit 0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  exit 100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
 
 /* week schedule */
@@ -611,9 +644,6 @@ svg rect {
   }
 
   /* day schedule */
-  [day-p] {
-    width: 28%;
-  }
 
   [day-p]:hover,
   [week-p]:hover {
