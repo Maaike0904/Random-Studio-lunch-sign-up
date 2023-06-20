@@ -160,7 +160,6 @@ h1 {
   border: none;
   border-bottom: 1px solid #ddd;
   counter-increment: index;
-  display: flex;
   align-items: center;
   padding: 1em;
 
@@ -178,7 +177,7 @@ h1 {
   height: 80px;
 
   /* cqi - bron: Stephanie Eckles */
-  width: 70cqi;
+  width: 90cqi;
   font-style: var(--black);
   list-style-type: none;
   font-family: montserrat, sans-serif;
@@ -646,6 +645,9 @@ svg rect {
   }
 
   /* day schedule */
+  [day-p] {
+    width: 40cqi;
+  }
 
   [day-p]:hover,
   [week-p]:hover {
