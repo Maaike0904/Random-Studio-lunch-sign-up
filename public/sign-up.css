@@ -184,6 +184,10 @@ input:focus {
   height: 11em;
   width: 19em;
   resize: none;
+  font-family: montserrat, sans-serif;
+  font-style: var(--white);
+  padding: 1em;
+  font-size: 1em;
 }
 
 /* Send button */
