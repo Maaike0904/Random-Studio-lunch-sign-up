@@ -176,6 +176,8 @@ h1 {
   text-align: center;
   border: 2px solid black;
   height: 80px;
+
+  /* cqi - bron: Stephanie Eckles */
   width: 70cqi;
   font-style: var(--black);
   list-style-type: none;
