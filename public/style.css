@@ -48,6 +48,11 @@ a {
   color: var(--black);
 }
 
+nav.main-nav {
+  position: sticky;
+  height: auto;
+}
+
 nav > ul {
   font-style: var(--black);
   font-size: 1em;
@@ -190,26 +195,6 @@ h1 {
   animation-timeline: view();
 }
 
-/* Scoll animation day schedule*/
-@keyframes fade-in-on-enter--fade-out-on-exit {
-  entry 0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  entry 100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  exit 0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  exit 100% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
-
 /* week schedule */
 [data-tab-content] {
   display: none;
@@ -252,6 +237,14 @@ h1 {
 }
 
 .tab-content {
+  height: 500px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  counter-increment: index;
+  align-items: center;
+  display: grid;
+  overflow-y: scroll;
+  align-items: start;
 }
 
 [week-section] {
@@ -284,7 +277,33 @@ h1 {
   gap: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
+
+  /* cqi - bron: Stephanie Eckles */
+  width: 30cqi;
+
+  /* Animatie scroll-driven-animation*/
+  /* source: https://scroll-driven-animations.style/demos/contact-list/css/ */
+  animation: linear fade-in-on-enter--fade-out-on-exit;
+  animation-timeline: view();
 }
+
+/* #monday,
+#tuesday,
+#wednesday,
+#thursday,
+#friday {
+  height: 500px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  counter-increment: index;
+  align-items: center;
+  padding: 1em;
+
+  display: grid;
+
+  overflow-y: scroll;
+  padding: 20px;
+} */
 
 /* month schedule */
 .container {
@@ -507,61 +526,6 @@ h1 {
 .date-formate.showtime {
   animation: showtime 1s forwards;
 }
-@keyframes to-top {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(100%);
-    opacity: 1;
-  }
-}
-@keyframes to-left {
-  0% {
-    transform: translatex(230%);
-    opacity: 1;
-  }
-  100% {
-    transform: translatex(0);
-    opacity: 1;
-  }
-}
-@keyframes to-right {
-  10% {
-    transform: translatex(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translatex(-150%);
-    opacity: 1;
-  }
-}
-@keyframes showtime {
-  0% {
-    transform: translatex(250%);
-    opacity: 1;
-  }
-  100% {
-    transform: translatex(0%);
-    opacity: 1;
-  }
-}
-@keyframes hidetime {
-  0% {
-    transform: translatex(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translatex(-370%);
-    opacity: 1;
-  }
-}
-@media (max-width: 375px) {
-  .month-list > div {
-    margin: 5px 0px;
-  }
-}
 
 /* preloader */
 /* #loader {
@@ -663,5 +627,25 @@ svg rect {
 
   .tabs {
     margin-top: 0;
+  }
+}
+
+/* Scoll animation day schedule*/
+@keyframes fade-in-on-enter--fade-out-on-exit {
+  entry 0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  entry 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  exit 0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  exit 100% {
+    opacity: 0;
+    transform: translateY(-100%);
   }
 }
