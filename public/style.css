@@ -164,6 +164,8 @@ h1 {
   color: var(--white);
   align-items: center;
   cursor: pointer;
+
+  width: 95%;
 }
 
 .plus-button:hover {
