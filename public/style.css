@@ -164,8 +164,22 @@ h1 {
   color: var(--white);
   align-items: center;
   cursor: pointer;
+  width: 100%;
+}
 
-  width: 95%;
+.plus-button-week {
+  font-style: var(--white);
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 500;
+  background-color: var(--black);
+  border: 2px solid black;
+  color: var(--white);
+  align-items: center;
+  cursor: pointer;
+
+  width: 100%;
+  margin-left: 5px;
 }
 
 .plus-button:hover {
