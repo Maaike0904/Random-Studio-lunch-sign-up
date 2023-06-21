@@ -2,298 +2,104 @@
 
 <!-- The main content -->
 <main class="main-sign-up">
-  <section class="container">
-    <article class="form-outer">
-      <!-- Start form -->
-      <form method="#" class="sign-up-form">
-        <!-- Start log in page -->
-        <fieldset class="page">
-          <legend class="form-legend">What is your name?</legend>
+    <section class="container">
+        <article class="form-outer">
+            <!-- Start form -->
+            <form method="post" action="https://sheetdb.io/api/v1/vq0fsa3zwdx2d" id="sheetdb-form" class="sign-up-form">
+                <!-- Start log in page -->
+                <fieldset class="page">
+                    <legend class="form-legend">What is your name?</legend>
 
-          <div class="field">
-            <!-- <label for="firstname">Name</label> -->
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="Name"
-              required
-              autocomplete="given-name"
-            />
-          </div>
+                    <div class="field">
+                        <!-- <label for="firstname">Name</label> -->
+                        <input type="text" id="firstname" name="data[name]" placeholder="Name" required autocomplete="name" />
+                    </div>
 
-          <div class="field">
-            <!-- <label for="lastname">Last name</label> -->
-            <input
-              type="text"
-              id="lastname"
-              name="lastname"
-              placeholder="Last name"
-              required
-              autocomplete="family-name"
-            />
-          </div>
-        </fieldset>
-        <!-- End log in page -->
+                    <div class="field">
+                        <!-- <label for="lastname">Last name</label> -->
+                        <input type="text" id="lastname" name="data[last-name]" placeholder="Last name" required autocomplete="last-name" />
+                    </div>
+                </fieldset>
+                <!-- End log in page -->
 
-        <!-- Start office page -->
-        <fieldset class="page">
-          <legend class="form-legend">
-            On which days will you be in the office?
-          </legend>
+                <!-- Start office page -->
+                <fieldset class="page">
+                    <legend class="form-legend">On which days will you be in the office?</legend>
 
-          <div class="field">
-            <div class="options-group">
-              <label
-                ><input
-                  type="checkbox"
-                  name="options[]"
-                  value="Monday"
-                  autocomplete="on"
-                />
-                Monday</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="options[]"
-                  value="Tuesday"
-                  autocomplete="on"
-                />
-                Tuesday</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="options[]"
-                  value="Wednesday"
-                  autocomplete="on"
-                />
-                Wednesday</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="options[]"
-                  value="Thursday"
-                  autocomplete="on"
-                />
-                Thursday</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="options[]"
-                  value="Friday"
-                  autocomplete="on"
-                />
-                Friday</label
-              >
-            </div>
-          </div>
-        </fieldset>
-        <!-- End office page -->
+                    <div class="field">
+                        <div class="options-group">
+                            <label><input type="checkbox" name="data[Monday]" value="Monday" autocomplete="on" /> Monday</label>
+                            <label><input type="checkbox" name="data[Tuesday]" value="Tuesday" autocomplete="on" /> Tuesday</label>
+                            <label><input type="checkbox" name="data[Wednesday]" value="Wednesday" autocomplete="on" /> Wednesday</label>
+                            <label><input type="checkbox" name="data[Thursday]" value="Thursday" autocomplete="on" /> Thursday</label>
+                            <label><input type="checkbox" name="data[Friday]" value="Friday" autocomplete="on" /> Friday</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- End office page -->
 
-        <!-- Start allergy page -->
-        <fieldset class="page">
-          <legend class="form-legend">Do you have any allergies?</legend>
+                <!-- Start allergy page -->
+                <fieldset class="page">
+                    <legend class="form-legend">Do you have any allergies?</legend>
 
-          <div class="field">
-            <div class="allergy-group">
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Milk"
-                  autocomplete="on"
-                />
-                Milk</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Eggs"
-                  autocomplete="on"
-                />
-                Eggs</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Fish"
-                  autocomplete="on"
-                />
-                Fish</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Shellfish"
-                  autocomplete="on"
-                />
-                Shellfish</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Tree-nuts"
-                  autocomplete="on"
-                />
-                Tree nuts</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Peanuts"
-                  autocomplete="on"
-                />
-                Peanuts</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Wheat"
-                  autocomplete="on"
-                />
-                Wheat</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Soybeans"
-                  autocomplete="on"
-                />
-                Soybeans</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="Sesame"
-                  autocomplete="on"
-                />
-                Sesame</label
-              >
-              <label
-                ><input
-                  type="checkbox"
-                  name="allergy[]"
-                  value="None"
-                  autocomplete="on"
-                />
-                None</label
-              >
-            </div>
-          </div>
-        </fieldset>
-        <!-- End allergy page -->
+                    <div class="field">
+                        <div class="allergy-group">
+                            <label><input type="checkbox" name="data[Milk]" value="Milk" autocomplete="on" /> Milk</label>
+                            <label><input type="checkbox" name="data[Eggs]" value="Eggs" autocomplete="on" /> Eggs</label>
+                            <label><input type="checkbox" name="data[Fish]" value="Fish" autocomplete="on" /> Fish</label>
+                            <label><input type="checkbox" name="data[Shellfish]" value="Shellfish" autocomplete="on" /> Shellfish</label>
+                            <label><input type="checkbox" name="data[Tree-nuts]" value="Tree-nuts" autocomplete="on" /> Tree nuts</label>
+                            <label><input type="checkbox" name="data[Peanuts]" value="Peanuts" autocomplete="on" /> Peanuts</label>
+                            <label><input type="checkbox" name="data[Wheat]" value="Wheat" autocomplete="on" /> Wheat</label>
+                            <label><input type="checkbox" name="data[Soybeans]" value="Soybeans" autocomplete="on" /> Soybeans</label>
+                            <label><input type="checkbox" name="data[Sesame]" value="Sesame" autocomplete="on" /> Sesame</label>
+                            <label><input type="checkbox" name="data[None]" value="None" autocomplete="on" /> None</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- End allergy page -->
 
-        <!-- Start preference page -->
-        <fieldset class="page">
-          <legend class="form-legend">Do you have any preferences?</legend>
+                <!-- Start preference page -->
+                <fieldset class="page">
+                    <legend class="form-legend">Do you have any preferences?</legend>
 
-          <div class="field">
-            <div class="preference-group">
-              <label
-                ><input
-                  type="radio"
-                  name="preference[]"
-                  value="Vegetarian"
-                  autocomplete="on"
-                />
-                Vegetarian</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="preference[]"
-                  value="Pescatarian"
-                  autocomplete="on"
-                />
-                Pescatarian</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="preference[]"
-                  value="Flexitarian"
-                  autocomplete="on"
-                />Flexitarian</label
-              >
+                    <div class="field">
+                        <div class="preference-group">
+                            <label><input type="radio" name="data[Vegetarian]" value="Vegetarian" autocomplete="on" /> Vegetarian</label>
+                            <label><input type="radio" name="data[Pescatarian]" value="Pescatarian" autocomplete="on" /> Pescatarian</label>
+                            <label><input type="radio" name="data[Flexitarian]" value="Flexitarian" autocomplete="on" />Flexitarian</label>
 
-              <label
-                ><input
-                  type="radio"
-                  name="preference[]"
-                  value="Vegan"
-                  autocomplete="on"
-                />
-                Vegan</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="preference[]"
-                  value="Halal"
-                  autocomplete="on"
-                />
-                Halal</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="preference[]"
-                  value="Kosher"
-                  autocomplete="on"
-                />
-                Kosher</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="preference[]"
-                  value="None"
-                  autocomplete="on"
-                />
-                None</label
-              >
-            </div>
-          </div>
-        </fieldset>
-        <!-- End preference page -->
+                            <label><input type="radio" name="data[Vegan]" value="Vegan" autocomplete="on" /> Vegan</label>
+                            <label><input type="radio" name="data[Halal]" value="Halal" autocomplete="on" /> Halal</label>
+                            <label><input type="radio" name="data[Kosher]" value="Kosher" autocomplete="on" /> Kosher</label>
+                            <label><input type="radio" name="data[None]" value="None" autocomplete="on" /> None</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- End preference page -->
 
-        <!-- Start notes page -->
-        <fieldset class="page">
-          <legend class="form-legend">
-            Do you have any notes for the chef?
-          </legend>
+                <!-- Start notes page -->
+                <fieldset class="page">
+                    <legend class="form-legend">Do you have any notes for the chef?</legend>
 
-          <div class="field">
-            <div class="notes-group">
-              <textarea id="note" name="note" autocomplete="on"></textarea>
-            </div>
-          </div>
+                    <div class="field">
+                        <div class="notes-group">
+                            <textarea id="note" name="data[]" autocomplete="on"></textarea>
+                        </div>
+                    </div>
 
-          <!-- Button -->
-          <div class="container-form">
-            <button id="btn" class="btn">
-              <span class="btn_send">SEND</span
-              ><span class="btn_sending">SENDING</span>
-              <span class="btn_sent"></span>
-            </button>
-          </div>
-        </fieldset>
-        <!-- End notes page -->
-      </form>
-    </article>
-  </section>
+                    <!-- Button -->
+                    <div class="container-form">
+                        <button id="btn" class="btn">
+                            <span class="btn_send">SEND</span><span class="btn_sending">SENDING</span>
+                            <span class="btn_sent"></span>
+                        </button>
+                    </div>
+                </fieldset>
+                <!-- End notes page -->
+            </form>
+        </article>
+    </section>
 </main>
 
 <%- include('./partials/foot.ejs') %>
