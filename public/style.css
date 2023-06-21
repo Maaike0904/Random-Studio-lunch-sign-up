@@ -154,6 +154,31 @@ h1 {
   text-align: center;
 }
 
+.plus-button {
+  font-style: var(--white);
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 500;
+  background-color: var(--black);
+  border: 2px solid black;
+  color: var(--white);
+  align-items: center;
+  cursor: pointer;
+}
+
+.plus-button:hover {
+  font-style: var(--black);
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 500;
+  background-color: var(--white);
+  border: 2px solid black;
+  color: var(--black);
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
 /* Container y-scroll */
 .container-days {
   height: 500px;
