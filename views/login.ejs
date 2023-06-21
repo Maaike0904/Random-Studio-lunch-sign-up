@@ -1,0 +1,37 @@
+<%- include('./partials/head.ejs') %>
+
+<main>
+  <h1>Log in with your account</h1>
+
+  <fieldset class="page">
+    <legend class="form-legend">What is your e-mail?</legend>
+
+    <div class="field">
+      <!-- <label for="firstname">Name</label> -->
+      <input
+        type="email"
+        id="firstname"
+        name="email"
+        placeholder="E-mail"
+        required
+        autocomplete="email"
+      />
+    </div>
+
+    <div class="field">
+      <input
+        type="password"
+        id="lastname"
+        name="password"
+        placeholder="Password"
+        required
+        autocomplete="current-password"
+      />
+    </div>
+
+    <a class="sign-up-btn" a href="/sign-up">Log in</a>
+  </fieldset>
+  <!-- End log in page -->
+</main>
+
+<%- include('./partials/foot.ejs') %>

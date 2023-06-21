@@ -52,6 +52,11 @@ server.get("/sign-up", function (req, res) {
   res.render("sign-up");
 });
 
+// Route voor login
+server.get("/login", function (req, res) {
+  res.render("login");
+});
+
 // Definieer de fetchJson functie
 async function fetchJson(url) {
   return await fetch(url)
