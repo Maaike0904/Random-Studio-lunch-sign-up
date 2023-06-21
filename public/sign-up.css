@@ -71,7 +71,9 @@ label {
 }
 
 /* Input field */
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   background-color: var(--white);
   margin: 1em 0 1em 0;
   width: 22em;

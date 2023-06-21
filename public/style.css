@@ -115,6 +115,26 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+/* Login page */
+.login-btn {
+  font-style: var(--black);
+  padding: 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--white);
+  border: 1px solid black;
+  color: var(--black);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 /* day-schedule */
 .todays-date {
   font-style: var(--black);
@@ -634,6 +654,11 @@ svg rect {
     border: 1px solid white;
     color: var(--white);
     transition: all 0.2s ease-in-out;
+  }
+
+  /* Login page */
+  .login-btn {
+    top: 90%;
   }
 
   /* day schedule */
