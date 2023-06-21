@@ -252,8 +252,9 @@ h1 {
 }
 
 .tab:hover {
-  background-color: #aaa;
+  background-color: #fff;
   border: none;
+  border: 2px solid black;
   color: var(--black);
   transition: all 0.2s ease-in-out;
 }
@@ -495,7 +496,7 @@ h1 {
   font-family: Dubai Light, Century Gothic;
   position: relative;
   display: inline;
-  top: 140px;
+  top: 50px;
   justify-content: center;
 }
 .day-text-formate {
