@@ -141,7 +141,7 @@ h1 {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 14em;
+  gap: 11em;
 }
 
 .day-week-month-nav {
@@ -663,7 +663,7 @@ svg rect {
 
   /* day schedule */
   [day-p] {
-    width: 40cqi;
+    width: 30cqi;
   }
 
   [day-p]:hover,
@@ -676,7 +676,7 @@ svg rect {
   /* week schedule */
 
   [week-p] {
-    width: 40cqi;
+    width: 30cqi;
   }
 
   .day-week-month-nav > ul {
