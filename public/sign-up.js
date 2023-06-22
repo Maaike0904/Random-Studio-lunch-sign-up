@@ -1,4 +1,5 @@
-const btn = document.getElementsById("btn");
+// Send button for the form
+const btn = document.getElementById("btn");
 btn.addEventListener("click", (e) => {
     console.log(e);
     btn.classList.toggle("loading");
@@ -13,14 +14,22 @@ form.addEventListener("submit", (e) => {
     const formData = new FormData(document.getElementById("sheetdb-form"));
     const selectedValues = {};
 
-    // Loop over de checkboxen en voeg de geselecteerde waarden toe aan een object
-    document.querySelectorAll('input[type="checkbox"]:checked').forEach((checkbox) => {
-        const name = checkbox.name;
-        const value = checkbox.value;
-        if (!selectedValues[name]) {
-            selectedValues[name] = [];
+    // Loop over de office-days checkboxes en voeg de geselecteerde waarden toe aan een object
+    document.querySelectorAll('input[name="data[office-days]"]:checked').forEach((checkbox) => {
+        const valueOffice = checkbox.value;
+        if (!selectedValues["office-days"]) {
+            selectedValues["office-days"] = [];
         }
-        selectedValues[name].push(value);
+        selectedValues["office-days"].push(valueOffice);
+    });
+
+    // Loop over de allergy checkboxes en voeg de geselecteerde waarden toe aan hetzelfde object
+    document.querySelectorAll('input[name="data[allergy]"]:checked').forEach((checkbox) => {
+        const valueAllergy = checkbox.value;
+        if (!selectedValues["allergy"]) {
+            selectedValues["allergy"] = [];
+        }
+        selectedValues["allergy"].push(valueAllergy);
     });
 
     // Loop over het object met geselecteerde waarden en voeg ze toe aan de FormData
@@ -36,6 +45,6 @@ form.addEventListener("submit", (e) => {
         .then((data) => {
             // Verwerk de response van SheetDB hier
             console.log(data);
-            window.open("page2.html", "_blank");
+            window.open("", "_blank");
         });
 });
