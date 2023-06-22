@@ -43,8 +43,8 @@ Dit project is gemaakt met Node
 10.Project live zetten met Cyclic.sh.
 
 ## Bronnen 🚤
-[Chat gpt](https://chat.openai.com/)
-[Codepen](https://codepen.io/your-work)
+* [Chat gpt](https://chat.openai.com/)
+* [Codepen]([https://codepen.io/your-work](https://codepen.io/WebDevSimplified/pen/ewapgK))
 
 ## Licentie 💯
 This project is licensed under the terms of the [MIT license](./LICENSE).
