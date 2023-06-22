@@ -11,7 +11,7 @@
 
 ## Beschrijving  📄
 Voor Random Studio hebben we een aanmeld systeem gemaakt, waarbij je kunt aangeven wanneer je mee eet met de lunch op locatie.
-<img width="600" alt="Scherm­afbeelding 2023-06-22 om 11 55 06" src="https://github.com/Amberhva/Random-Studio-lunch-sign-up/assets/112861144/403d1450-642c-46ae-87ed-044807799050"><img width="300" alt="Scherm­afbeelding 2023-06-22 om 12 52 32" src="https://github.com/Amberhva/Random-Studio-lunch-sign-up/assets/112861144/881a2ac4-4c30-47cd-b687-7d7972bc6d62">
+<img width="600" alt="Scherm­afbeelding 2023-06-22 om 11 55 06" src="https://github.com/Amberhva/Random-Studio-lunch-sign-up/assets/112861144/403d1450-642c-46ae-87ed-044807799050"><img width="100" alt="Scherm­afbeelding 2023-06-22 om 12 52 32" src="https://github.com/Amberhva/Random-Studio-lunch-sign-up/assets/112861144/881a2ac4-4c30-47cd-b687-7d7972bc6d62">
 
 🌐 Bekijk [hier](https://random-studio-lunch-sign-up.adaptable.app/) de live link naar de website
 
