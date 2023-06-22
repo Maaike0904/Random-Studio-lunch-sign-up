@@ -11,7 +11,9 @@
 
 ## Beschrijving  📄
 Voor Random Studio hebben we een aanmeld systeem gemaakt, waarbij je kunt aangeven wanneer je mee eet met de lunch op locatie.
-<img width="1423" alt="Scherm­afbeelding 2023-06-22 om 11 55 06" src="https://github.com/Amberhva/Random-Studio-lunch-sign-up/assets/112861144/403d1450-642c-46ae-87ed-044807799050">
+![Free Device Mockup - Top view](https://github.com/Amberhva/Random-Studio-lunch-sign-up/assets/112861144/5ac57dc6-e2c8-4d29-8c52-099c67638ef9)
+
+
 🌐 Bekijk [hier](https://random-studio-lunch-sign-up.adaptable.app/) de live link naar de website
 
 ## Gebruik 👩‍💻
@@ -44,7 +46,7 @@ Dit project is gemaakt met Node
 
 ## Bronnen 🚤
 * [Chat gpt](https://chat.openai.com/)
-* [Codepen]([https://codepen.io/your-work](https://codepen.io/)
+* [Codepen](https://codepen.io/your-work](https://codepen.io/)
 * [scroll-driven-animations.style](https://scroll-driven-animations.style/demos/contact-list/css/)
 * [YouTube](https://www.youtube.com/)
   
