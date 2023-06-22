@@ -31,16 +31,16 @@ Wij hebben tijdens het maken van deze opdracht gebruik gemaakt van:
 
 ## Installatie 📥
 Dit project is gemaakt met Node
-1.Installeer Node.
-2.Fork deze leertaak.
-3.Code klonen naar Github Desktop.
-4.Code open in VSCode of een andere editor.
-5.Terminal open.
-6.Npm install (typen in je terminal, daarna enter druken).
-7.gitignore (aparte file aanmaken (VSCode, editor) en dan node_modules schrijven in de file)
-8.Npm start (typen in je terminal).
-9.Localhost:8000 (live link om je website te zien, link van de server).
-10.Project live zetten met Cyclic.sh.
+<br> 1.Installeer Node.
+<br> 2.Fork deze leertaak.
+<br> 3.Code klonen naar Github Desktop.
+<br> 4.Code open in VSCode of een andere editor.
+<br> 5.Terminal open.
+<br> 6.Npm install (typen in je terminal, daarna enter druken).
+<br> 7.gitignore (aparte file aanmaken (VSCode, editor) en dan node_modules schrijven in de file)
+<br> 8.Npm start (typen in je terminal).
+<br> 9.Localhost:8000 (live link om je website te zien, link van de server).
+<br> 10.Project live zetten met Cyclic.sh.
 
 ## Bronnen 🚤
 * [Chat gpt](https://chat.openai.com/)
