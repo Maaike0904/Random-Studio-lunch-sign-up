@@ -78,7 +78,7 @@ input[type="text"] {
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid black; /* Vervang 'black' door de gewenste kleur */
+    border-bottom: 1px solid black;
     font-style: var(--black);
     padding: 1em;
     font-size: 1, 2em;
