@@ -44,7 +44,6 @@ form.addEventListener("submit", (e) => {
         .then((response) => response.json())
         .then((data) => {
             // Process the response of the SheetDB here
-            console.log(data);
             window.open("/week-schedule", "_blank");
         });
 });
