@@ -44,7 +44,7 @@ body {
     flex-direction: column;
     align-items: center;
     border: none;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 5em 0;
 }
 
 /* Title of the fieldset */
@@ -78,7 +78,7 @@ input[type="text"] {
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     font-style: var(--black);
     padding: 1em;
     font-size: 1, 2em;
@@ -93,7 +93,7 @@ input[type="password"] {
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     font-style: var(--black);
     padding: 1em;
     font-size: 1, 2em;
