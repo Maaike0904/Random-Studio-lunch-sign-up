@@ -42,8 +42,7 @@ server.get("/day-schedule", async (req, res) => {
     try {
         const dataDay = await fetchJson(url);
         const personsThursday = dataDay.filter((entry) => entry.officeDays.includes("Thursday"));
-        const personName = personsThursday.length > 0 ? personsThursday[0].name : null;
-        res.render("day-schedule", { day: "Thursday", personName });
+        res.render("day-schedule", { day: "Thursday", personsThursday });
     } catch (error) {
         console.log(error);
         res.status(500).send("Er is een fout opgetreden bij het ophalen van de gegevens");

@@ -15,9 +15,12 @@
     </section>
 
     <div day-section class="container-days">
-        <% if (day === "Thursday" && personName) { %>
-        <p day-p><%= personName %></p>
+        <% if (day === "Thursday" && personsThursday && personsThursday.length > 0) { %> <% personsThursday.forEach(function(person) { %>
+        <p day-p><%= person.name %></p>
+        <% }); %>
         <a href="/sign-up"><button class="plus-button">+</button></a>
+        <% } else { %>
+        <p>No persons available on Thursday.</p>
         <% } %>
     </div>
 </main>
