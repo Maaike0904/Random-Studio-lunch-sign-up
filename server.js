@@ -19,8 +19,8 @@ server.use(express.static("public"));
 // Route voor de weekplanning
 server.get("/week-schedule", async (req, res) => {
     try {
-        const data = await fetchJson(url);
-        res.render("week-schedule", { scheduleData: data }); // Geef de data door aan de template-renderfunctie
+        const dataWeek = await fetchJson(url);
+        res.render("week-schedule", { scheduleData: dataWeek }); // Geef de data door aan de template-renderfunctie
     } catch (error) {
         console.log(error);
         res.status(500).send("Er is een fout opgetreden bij het ophalen van de gegevens");
@@ -40,8 +40,8 @@ server.get("/index", (request, response) => {
 // Route voor de dagplanning
 server.get("/day-schedule", async (req, res) => {
     try {
-        const data = await fetchJson(url);
-        const personsThursday = data.filter((entry) => entry.officeDays.includes("Thursday"));
+        const dataDay = await fetchJson(url);
+        const personsThursday = dataDay.filter((entry) => entry.officeDays.includes("Thursday"));
         const personName = personsThursday.length > 0 ? personsThursday[0].name : null;
         res.render("day-schedule", { day: "Thursday", personName });
     } catch (error) {
