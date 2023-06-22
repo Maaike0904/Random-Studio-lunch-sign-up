@@ -115,13 +115,33 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+/* Login page */
+.login-btn {
+  font-style: var(--black);
+  padding: 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--white);
+  border: 1px solid black;
+  color: var(--black);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 /* day-schedule */
 .todays-date {
   font-style: var(--black);
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 14em;
+  gap: 11em;
 }
 
 .day-week-month-nav {
@@ -301,7 +321,7 @@ h1 {
   text-align: center;
   border: 2px solid black;
   height: 80px;
-
+  line-height: 40px;
   font-style: var(--black);
   list-style-type: none;
   padding: 1em;
@@ -636,9 +656,14 @@ svg rect {
     transition: all 0.2s ease-in-out;
   }
 
+  /* Login page */
+  .login-btn {
+    top: 80%;
+  }
+
   /* day schedule */
   [day-p] {
-    width: 40cqi;
+    width: 30cqi;
   }
 
   [day-p]:hover,
@@ -651,7 +676,7 @@ svg rect {
   /* week schedule */
 
   [week-p] {
-    width: 40cqi;
+    width: 30cqi;
   }
 
   .day-week-month-nav > ul {
