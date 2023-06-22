@@ -38,8 +38,16 @@ server.get("/index", (request, response) => {
 });
 
 // Route voor de dagplanning
-server.get("/day-schedule", function (req, res) {
-    res.render("day-schedule");
+server.get("/day-schedule", async (req, res) => {
+    try {
+        const data = await fetchJson(url);
+        const personsThursday = data.filter((entry) => entry.officeDays.includes("Thursday"));
+        const personName = personsThursday.length > 0 ? personsThursday[0].name : null;
+        res.render("day-schedule", { day: "Thursday", personName });
+    } catch (error) {
+        console.log(error);
+        res.status(500).send("Er is een fout opgetreden bij het ophalen van de gegevens");
+    }
 });
 
 // Route voor de maandplanning
