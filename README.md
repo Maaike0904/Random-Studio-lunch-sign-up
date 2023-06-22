@@ -44,8 +44,9 @@ Dit project is gemaakt met Node
 
 ## Bronnen 🚤
 * [Chat gpt](https://chat.openai.com/)
-* [Codepen]([https://codepen.io/your-work](https://codepen.io/WebDevSimplified/pen/ewapgK))
+* [Codepen]([https://codepen.io/your-work](https://codepen.io/)
 * [scroll-driven-animations.style](https://scroll-driven-animations.style/demos/contact-list/css/)
+* [YouTube](https://www.youtube.com/)
   
 ## Licentie 💯
 This project is licensed under the terms of the [MIT license](./LICENSE).
