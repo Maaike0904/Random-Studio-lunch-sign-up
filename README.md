@@ -2,12 +2,12 @@
 
 # Random Studio - Lunch sign-up
 ## Inhoudsopgave 📋
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+  * [Beschrijving](#beschrijving) 📄
+  * [Gebruik](#gebruik) 👩‍💻
+  * [Kenmerken](#kenmerken) 💃
+  * [Installatie](#installatie) 📥
+  * [Bronnen](#bronnen) 🚤
+  * [Licentie](#licentie) 💯
 
 ## Beschrijving  📄
 Voor Random Studio hebben we een aanmeld systeem gemaakt, waarbij je kunt aangeven wanneer je mee eet met de lunch op locatie.
@@ -15,10 +15,19 @@ Voor Random Studio hebben we een aanmeld systeem gemaakt, waarbij je kunt aangev
 	🌐 Bekijk [hier](https://random-studio-lunch-sign-up.adaptable.app/) de live link naar de website
 
 ## Gebruik 👩‍💻
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+Het doel voor de lunch opdracht is het duidelijk maken voor de kok hoeveel maaltijden er gekookt moeten worden elke dag. Ook moet aanmelden voor de lunch zo pijnloos en snel mogelijk gedaan worden. Hier kun je invullen welke dagen je mee eet, of je allergieën hebt, en of je nog een notitie wilt achterlaten voor de chef. Zodra je je aanwezigheid een keer erin hebt gezet, zou je het liefst “er nooit meer” naar hoeven te kijken. Tenzij je week anders is dan normaal en/of gasten hebt. Ook moet er een dag-/week- en maand-overzicht getoond kunnen worden waarbij je kunt terug kijken hoe vaak iemand heeft mee gegeten.
 
 ## Kenmerken 💃
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+Wij hebben tijdens het maken van deze opdracht gebruik gemaakt van:
+* Node.js
+* Ejs
+* Express
+* CSS
+* Javascript
+* @mediaquerys
+* scroll animation
+* Google spreadsheets
+* SheetDB
 
 ## Installatie 📥
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
