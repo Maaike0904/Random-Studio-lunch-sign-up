@@ -72,13 +72,33 @@ server.listen(server.get("port"), () => {
 const form = document.getElementById("sheetdb-form");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    const formData = new FormData(document.getElementById("sheetdb-form"));
+    const selectedValues = {};
+
+    // Loop over de checkboxen en voeg de geselecteerde waarden toe aan een object
+    document.querySelectorAll('input[type="checkbox"]:checked').forEach((checkbox) => {
+        const name = checkbox.name;
+        const value = checkbox.value;
+        if (!selectedValues[name]) {
+            selectedValues[name] = [];
+        }
+        selectedValues[name].push(value);
+    });
+
+    // Loop over het object met geselecteerde waarden en voeg ze toe aan de FormData
+    for (const name in selectedValues) {
+        formData.append(name, selectedValues[name].join(","));
+    }
+
     fetch(form.action, {
         method: "POST",
-        body: new FormData(document.getElementById("sheetdb-form")),
+        body: formData,
     })
         .then((response) => response.json())
-        .then((html) => {
-            // you can put any JS code here
-            window.open("page2.html", "_blank");
+        .then((data) => {
+            // Verwerk de response van SheetDB hier
+            console.log(data);
+            window.open("/overview.ejs", "_blank");
         });
 });
