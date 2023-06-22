@@ -1,86 +1,56 @@
 <%- include('./partials/head.ejs') %>
 
 <main>
-  <nav class="day-week-month-nav">
-    <ul>
-      <li><a href="/day-schedule">Day</a></li>
-      <li class="week-underline"><a href="/week-schedule">Week</a></li>
-      <li><a href="/month-schedule">Month</a></li>
-    </ul>
-  </nav>
+    <nav class="day-week-month-nav">
+        <ul>
+            <li><a href="/day-schedule">Day</a></li>
+            <li class="week-underline"><a href="/week-schedule">Week</a></li>
+            <li><a href="/month-schedule">Month</a></li>
+        </ul>
+    </nav>
 
-  <section class="todays-date">
-    <div class="date-formate">Wednesday, June 21</div>
-    <p>15</p>
-  </section>
+    <section class="todays-date">
+        <div class="date-formate">Wednesday, June 21</div>
+        <p>15</p>
+    </section>
 
-  <section week-section>
-    <ul class="tabs">
-      <li data-tab-target="#monday" class="active tab">
-        Mon <br />
-        26/6
-      </li>
-      <li data-tab-target="#tuesday" class="tab">
-        Tue <br />
-        27/6
-      </li>
-      <li data-tab-target="#wednesday" class="tab">
-        Wed <br />
-        28/6
-      </li>
-      <li data-tab-target="#thursday" class="tab">
-        Thu <br />
-        29/6
-      </li>
-      <li data-tab-target="#friday" class="tab">
-        Fri <br />
-        30/6
-      </li>
-    </ul>
+    <section week-section>
+        <ul class="tabs">
+            <li data-tab-target="#monday" class="active tab">
+                Mon <br />
+                26/6
+            </li>
+            <li data-tab-target="#tuesday" class="tab">
+                Tue <br />
+                27/6
+            </li>
+            <li data-tab-target="#wednesday" class="tab">
+                Wed <br />
+                28/6
+            </li>
+            <li data-tab-target="#thursday" class="tab">
+                Thu <br />
+                29/6
+            </li>
+            <li data-tab-target="#friday" class="tab">
+                Fri <br />
+                30/6
+            </li>
+        </ul>
 
-    <div class="tab-content">
-      <div id="monday" data-tab-content class="active">
-        <p week-p>Marijn</p>
-        <p week-p>Clara</p>
-        <p week-p>Kyeongrok</p>
-        <p week-p>Steve</p>
-        <p week-p>Greta</p>
-        <p week-p>Hugo</p>
-        <p week-p>Sean</p>
-        <p week-p>Finn</p>
-        <a href="/sign-up"><button class="plus-button-week">+</button></a>
-      </div>
-      <div id="tuesday" data-tab-content>
-        <p week-p>Finn</p>
-        <p week-p>Hugo</p>
-        <p week-p>Greta</p>
-        <a href="/sign-up"><button class="plus-button-week">+</button></a>
-      </div>
-      <div id="wednesday" data-tab-content>
-        <p week-p>Sean</p>
-        <p week-p>Greta</p>
-        <p week-p>Steve</p>
-        <a href="/sign-up"><button class="plus-button-week">+</button></a>
-      </div>
-      <div id="thursday" data-tab-content>
-        <p week-p>Clara</p>
-        <p week-p>Finn</p>
-        <p week-p>Marijn</p>
-        <p week-p>Kyeongrok</p>
-        <a href="/sign-up"><button class="plus-button-week">+</button></a>
-      </div>
-      <div id="friday" data-tab-content>
-        <p week-p>Kyeongrok</p>
-        <p week-p>Sean</p>
-        <p week-p>Greta</p>
-        <p week-p>Clara</p>
-        <p week-p>Marijn</p>
-        <p week-p>Steve</p>
-        <p week-p>Finn</p>
-        <a href="/sign-up"><button class="plus-button-week">+</button></a>
-      </div>
-    </div>
-  </section>
+        <div class="tab-content">
+            <% var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]; %>
+            <% days.forEach(function(day) { %>
+                <% var persons = scheduleData.filter(function(entry) { return entry.officeDays.includes(day); }); %>
+                <div id="<%= day.toLowerCase() %>" data-tab-content <% if (day === "Monday") { %>class="active"<% } %>>
+                <% persons.forEach(function(person) { %>
+                    <p week-p><%= person.name %></p>
+                <% }); %>
+                <a href="/sign-up"><button class="plus-button-week">+</button></a>
+                </div>
+            <% }); %>
+        </div>
+    </section>
 </main>
 
 <%- include('./partials/foot.ejs') %>

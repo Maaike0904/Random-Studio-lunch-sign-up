@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
     const formData = new FormData(document.getElementById("sheetdb-form"));
     const selectedValues = {};
 
-    // Loop over de office-days checkboxes en voeg de geselecteerde waarden toe aan een object
+    // Loop over the office-days checkboxes and add the selected values to the object
     document.querySelectorAll('input[name="data[office-days]"]:checked').forEach((checkbox) => {
         const valueOffice = checkbox.value;
         if (!selectedValues["office-days"]) {
@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
         selectedValues["office-days"].push(valueOffice);
     });
 
-    // Loop over de allergy checkboxes en voeg de geselecteerde waarden toe aan hetzelfde object
+    // Loop over the allergy checkboxes and add the selected values to the object
     document.querySelectorAll('input[name="data[allergy]"]:checked').forEach((checkbox) => {
         const valueAllergy = checkbox.value;
         if (!selectedValues["allergy"]) {
@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
         selectedValues["allergy"].push(valueAllergy);
     });
 
-    // Loop over het object met geselecteerde waarden en voeg ze toe aan de FormData
+    // Loop over the object with selected values and add them to the FormData
     for (const name in selectedValues) {
         formData.append(name, selectedValues[name].join(","));
     }
@@ -43,8 +43,8 @@ form.addEventListener("submit", (e) => {
     })
         .then((response) => response.json())
         .then((data) => {
-            // Verwerk de response van SheetDB hier
+            // Process the response of the SheetDB here
             console.log(data);
-            window.open("", "_blank");
+            window.open("week-schedule.ejs", "_blank");
         });
 });

@@ -1,7 +1,7 @@
 import express from "express";
 
-// de basis url van de api
-const url = "https://docs.google.com/spreadsheets/d/1iFTrwoSoFcn8Jwm-MX63H3bw-nFHBzIzYn2Ygz7INYo/edit#gid=722704947";
+// de basis url van de SheetDB api
+const url = "https://sheetdb.io/api/v1/vq0fsa3zwdx2d";
 
 // maak een nieuwe express app
 const server = express();
@@ -16,6 +16,17 @@ server.set("views", "./views");
 // Stel de public map in
 server.use(express.static("public"));
 
+// Route voor de weekplanning
+server.get("/week-schedule", async (req, res) => {
+    try {
+        const data = await fetchJson(url);
+        res.render("week-schedule", { scheduleData: data }); // Geef de data door aan de template-renderfunctie
+    } catch (error) {
+        console.log(error);
+        res.status(500).send("Er is een fout opgetreden bij het ophalen van de gegevens");
+    }
+});
+
 // Route voor de index pagina
 server.get("/", (request, response) => {
     response.render("index");
@@ -26,19 +37,9 @@ server.get("/index", (request, response) => {
     response.render("index");
 });
 
-// Route voor de overview pagina
-server.get("/overview", function (req, res) {
-    res.render("overview");
-});
-
 // Route voor de dagplanning
 server.get("/day-schedule", function (req, res) {
     res.render("day-schedule");
-});
-
-// Route voor de weekplanning
-server.get("/week-schedule", function (req, res) {
-    res.render("week-schedule");
 });
 
 // Route voor de maandplanning
@@ -60,7 +61,17 @@ server.get("/login", function (req, res) {
 async function fetchJson(url) {
     return await fetch(url)
         .then((response) => response.json())
-        .catch((error) => error);
+        .then((data) => {
+            // Voeg het attribuut officeDays toe aan elk entry-object
+            return data.map((entry) => {
+                entry.officeDays = JSON.parse(entry["office-days"]);
+                return entry;
+            });
+        })
+        .catch((error) => {
+            console.log(error);
+            throw error;
+        });
 }
 
 // Start met luisteren
