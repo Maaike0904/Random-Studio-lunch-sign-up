@@ -39,17 +39,17 @@
         </ul>
 
         <div class="tab-content">
-            <% const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]; %>
-<% days.forEach(function(day) { %>
-    <% const persons = scheduleData.filter(function(entry) { return entry.officeDays.includes(day); }); %>
-    <div id="<%= day.toLowerCase() %>" data-tab-content <% if (day === "Monday") { %>class="active"<% } %>>
-        <% persons.forEach(function(person) { %>
-            <p week-p><%= person.name + ' ' + person['last-name'] %></p>
-        <% }); %>
-        <a href="/sign-up"><button class="plus-button-week">+</button></a>
-    </div>
-<% }); %>
+    <% const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]; %>
+    <% days.forEach(function(day) { %>
+        <% const persons = scheduleData.filter(function(entry) { return entry.officeDays.includes(day); }); %>
+        <div id="<%= day.toLowerCase() %>" data-tab-content <% if (day === "Monday") { %>class="active"<% } %>>
+            <% persons.forEach(function(person) { %>
+                <p week-p><%= person.name + ' ' + person['last-name'] %></p>
+            <% }); %>
+            <a href="/sign-up"><button class="plus-button-week">+</button></a>
         </div>
+    <% }); %>
+</div>
     </section>
 </main>
 

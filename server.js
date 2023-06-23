@@ -18,13 +18,8 @@ server.use(express.static("public"));
 
 // Route voor de weekplanning
 server.get("/week-schedule", async (req, res) => {
-    try {
-        const dataWeek = await fetchJson(url);
-        res.render("week-schedule", { scheduleData: dataWeek }); // Geef de data door aan de template-renderfunctie
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Er is een fout opgetreden bij het ophalen van de gegevens");
-    }
+    const dataWeek = await fetchJson(url);
+    res.render("week-schedule", { scheduleData: dataWeek }); // Geef de data door aan de template-renderfunctie
 });
 
 // Route voor de index pagina
@@ -39,14 +34,9 @@ server.get("/index", (request, response) => {
 
 // Route voor de dagplanning
 server.get("/day-schedule", async (req, res) => {
-    try {
-        const dataDay = await fetchJson(url);
-        const personsThursday = dataDay.filter((entry) => entry.officeDays.includes("Thursday"));
-        res.render("day-schedule", { day: "Thursday", personsThursday });
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Er is een fout opgetreden bij het ophalen van de gegevens");
-    }
+    const dataDay = await fetchJson(url);
+    const personsThursday = dataDay.filter((entry) => entry.officeDays.includes("Thursday"));
+    res.render("day-schedule", { day: "Thursday", personsThursday });
 });
 
 // Route voor de maandplanning
